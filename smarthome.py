@@ -22,7 +22,7 @@ while True:
             arduino_message = data.decode().split("|")
 
             sender_email = "nadezhdastestemail@gmail.com"
-            password = "Testiranje12"
+            password = ""
             context = ssl.create_default_context()
             with smtplib.SMTP_SSL(smtp_server, port, context=context) as session:
                     session.login(sender_email, password)
